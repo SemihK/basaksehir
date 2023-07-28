@@ -11,6 +11,14 @@
 		603D52342A73C1A50032D640 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52332A73C1A50032D640 /* ContentView.swift */; };
 		603D52362A73C1A70032D640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603D52352A73C1A70032D640 /* Assets.xcassets */; };
 		603D523A2A73C1A70032D640 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603D52392A73C1A70032D640 /* Preview Assets.xcassets */; };
+		603D52452A73D72A0032D640 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52442A73D72A0032D640 /* LocationsDataService.swift */; };
+		603D52472A73D7370032D640 /* LocationsViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52462A73D7370032D640 /* LocationsViewModels.swift */; };
+		603D52492A73D7400032D640 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52482A73D7400032D640 /* Location.swift */; };
+		603D524B2A73D75D0032D640 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D524A2A73D75D0032D640 /* LocationsView.swift */; };
+		603D524D2A73D7770032D640 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D524C2A73D7770032D640 /* LocationListView.swift */; };
+		603D524F2A73D7850032D640 /* LocationMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D524E2A73D7850032D640 /* LocationMapAnnotationView.swift */; };
+		603D52512A73D7980032D640 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52502A73D7980032D640 /* LocationDetailView.swift */; };
+		603D52532A73D7A90032D640 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52522A73D7A90032D640 /* LocationPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		603D52352A73C1A70032D640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		603D52372A73C1A70032D640 /* Basaksehir_Rehber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Basaksehir_Rehber.entitlements; sourceTree = "<group>"; };
 		603D52392A73C1A70032D640 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		603D52442A73D72A0032D640 /* LocationsDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		603D52462A73D7370032D640 /* LocationsViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModels.swift; sourceTree = "<group>"; };
+		603D52482A73D7400032D640 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		603D524A2A73D75D0032D640 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		603D524C2A73D7770032D640 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		603D524E2A73D7850032D640 /* LocationMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapAnnotationView.swift; sourceTree = "<group>"; };
+		603D52502A73D7980032D640 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		603D52522A73D7A90032D640 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,10 @@
 		603D52302A73C1A50032D640 /* Basaksehir Rehber */ = {
 			isa = PBXGroup;
 			children = (
+				603D52432A73D6FA0032D640 /* DataServices */,
+				603D52422A73D6ED0032D640 /* Views */,
+				603D52412A73D6E50032D640 /* ViewModels */,
+				603D52402A73D6DD0032D640 /* Models */,
 				603D52312A73C1A50032D640 /* Basaksehir_RehberApp.swift */,
 				603D52332A73C1A50032D640 /* ContentView.swift */,
 				603D52352A73C1A70032D640 /* Assets.xcassets */,
@@ -67,6 +87,42 @@
 				603D52392A73C1A70032D640 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		603D52402A73D6DD0032D640 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				603D52482A73D7400032D640 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		603D52412A73D6E50032D640 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				603D52462A73D7370032D640 /* LocationsViewModels.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		603D52422A73D6ED0032D640 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				603D524A2A73D75D0032D640 /* LocationsView.swift */,
+				603D524C2A73D7770032D640 /* LocationListView.swift */,
+				603D524E2A73D7850032D640 /* LocationMapAnnotationView.swift */,
+				603D52502A73D7980032D640 /* LocationDetailView.swift */,
+				603D52522A73D7A90032D640 /* LocationPreviewView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		603D52432A73D6FA0032D640 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				603D52442A73D72A0032D640 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +197,14 @@
 			files = (
 				603D52342A73C1A50032D640 /* ContentView.swift in Sources */,
 				603D52322A73C1A50032D640 /* Basaksehir_RehberApp.swift in Sources */,
+				603D52512A73D7980032D640 /* LocationDetailView.swift in Sources */,
+				603D52492A73D7400032D640 /* Location.swift in Sources */,
+				603D524B2A73D75D0032D640 /* LocationsView.swift in Sources */,
+				603D524D2A73D7770032D640 /* LocationListView.swift in Sources */,
+				603D52452A73D72A0032D640 /* LocationsDataService.swift in Sources */,
+				603D52472A73D7370032D640 /* LocationsViewModels.swift in Sources */,
+				603D52532A73D7A90032D640 /* LocationPreviewView.swift in Sources */,
+				603D524F2A73D7850032D640 /* LocationMapAnnotationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
