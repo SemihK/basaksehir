@@ -13,7 +13,7 @@ struct LocationMapAnnotationView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Image(systemName: "toilet.circle.fill")
+            Image(systemName: "house.circle.fill")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 30, height: 30)

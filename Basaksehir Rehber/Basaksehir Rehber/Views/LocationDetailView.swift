@@ -65,12 +65,13 @@ extension LocationDetailView {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 
-            Text(location.status)
+            Text(location.status) 
                 .font(.title3)
                 .foregroundColor(.secondary)
+                
         }
     }
-    
+  
     private var descriptionSection: some View {
         VStack(alignment: .leading, spacing: 16) {
             
@@ -78,10 +79,14 @@ extension LocationDetailView {
                 .font(.title3)
                 .foregroundColor(.secondary)
             
+            Text(location.activity)
+                .font(.title3)
+                .foregroundColor(.secondary)
+            
 
             
             if let url = URL(string: location.link) {
-                Link("ALO 153", destination: url)
+                Link("Daha fazla bilgi için tıklayın", destination: url)
                     .font(.headline)
                     .tint(.blue)
                     
