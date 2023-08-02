@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600AEE6B2A7A94FE00242FD5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600AEE6A2A7A94FE00242FD5 /* SplashScreen.swift */; };
 		603D52322A73C1A50032D640 /* Basaksehir_RehberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52312A73C1A50032D640 /* Basaksehir_RehberApp.swift */; };
 		603D52342A73C1A50032D640 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603D52332A73C1A50032D640 /* ContentView.swift */; };
 		603D52362A73C1A70032D640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 603D52352A73C1A70032D640 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		600AEE6A2A7A94FE00242FD5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		603D522E2A73C1A50032D640 /* Basaksehir Rehber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basaksehir Rehber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603D52312A73C1A50032D640 /* Basaksehir_RehberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basaksehir_RehberApp.swift; sourceTree = "<group>"; };
 		603D52332A73C1A50032D640 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				603D524E2A73D7850032D640 /* LocationMapAnnotationView.swift */,
 				603D52502A73D7980032D640 /* LocationDetailView.swift */,
 				603D52522A73D7A90032D640 /* LocationPreviewView.swift */,
+				600AEE6A2A7A94FE00242FD5 /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				603D52492A73D7400032D640 /* Location.swift in Sources */,
 				603D524B2A73D75D0032D640 /* LocationsView.swift in Sources */,
 				603D524D2A73D7770032D640 /* LocationListView.swift in Sources */,
+				600AEE6B2A7A94FE00242FD5 /* SplashScreen.swift in Sources */,
 				603D52452A73D72A0032D640 /* LocationsDataService.swift in Sources */,
 				603D52472A73D7370032D640 /* LocationsViewModels.swift in Sources */,
 				603D52532A73D7A90032D640 /* LocationPreviewView.swift in Sources */,
@@ -344,7 +348,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -386,7 +390,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
