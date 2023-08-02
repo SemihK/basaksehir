@@ -25,17 +25,28 @@ struct LocationMapAnnotationView: View {
                     .background(.blue) // Polis kategorisi için kırmızı arkaplan
                     .clipShape(Circle())
             } else if category == "bilgi-evi" {
-                Image(systemName: "book.circle.fill") // Kategoriye özel kütüphane ikonu
+                Image(systemName: "house.circle.fill") // Kategoriye özel kütüphane ikonu
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 30)
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding(6)
-                    .background(.orange) // Kütüphane kategorisi için mavi arkaplan
+                    .background(accentColor) // Kütüphane kategorisi için mavi arkaplan
                     .clipShape(Circle())
             } else if category == "yesil-alan" {
                 Image(systemName: "sportscourt.fill") // Diğer kategorilere özel varsayılan ikon
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30, height: 30)
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding(6)
+                    .background(.green) // Varsayılan arkaplan rengi (accentColor)
+                    .clipShape(Circle())
+            }
+            else if category == "kutuphane" {
+                Image(systemName: "book.circle.fill") // Diğer kategorilere özel varsayılan ikon
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30, height: 30)

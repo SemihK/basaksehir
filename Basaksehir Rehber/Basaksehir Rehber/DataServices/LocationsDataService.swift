@@ -39,7 +39,7 @@ class LocationsDataService {
                          coordinates: CLLocationCoordinate2D(latitude:41.10449102980907,longitude:  28.80172069503571 ),
                          description: "Başakşehir Polis Karakolu",
                          imageNames: ["Basaksehir"],
-                         link: "155",
+                         link: "tel://\(155)",
                          category:"polis"),
         
         Location(name: "Başakşehir Millet Bahçesi",
@@ -47,16 +47,16 @@ class LocationsDataService {
                  coordinates: CLLocationCoordinate2D(latitude: 41.119484722170355, longitude: 28.776771757639125),
                   description: "Başakşehir Millet Bahçesi, Başakşehir Belediyesi yeni hizmet binası, İkitelli Şehir Hastanesi, Yavuz Sultan Selim Köprüsü, Kuzey Marmara Otoyolu ve yakın zamanda güzergâhı açıklanan Kanal İstanbul gibi dev projelerin merkezinde yer alıyor. Başakşehir Millet Bahçesi, 37 bin metrekarelik kent meydanının hemen yanında 280 bin metrekare alan üzerine kuruldu. Bahçe, özel filtre sistemiyle kendi kendini temizleyen 15 bin 600 metrekarelik biyolojik göleti yer almaktadır.",
                   imageNames: ["basaksehir-millet"],
-                  link: "basaksehir",
+                  link: "adres",
                   category: "yesil-alan"),
         
-        Location(name: <#T##String#>,
-                 status: <#T##String#>,
-                 coordinates: <#T##CLLocationCoordinate2D#>,
-                 description: <#T##String#>,
-                 imageNames: <#T##[String]#>,
-                 link: <#T##String#>,
-                 category: <#T##String#>)
+        Location(name: "Sular Vadisi",
+                 status: "24 saat hizmet vermektedir.",
+                 coordinates: CLLocationCoordinate2D(latitude: 41.1194282126113, longitude: 28.80736828395418),
+                 description: "Başak mahallesi 4 ve 5. Etap’larda yer alan Sular Vadisi; 550.000 m2’lik alanda kurulmuştur. Sular vadisi içerisinde; 20.000 m2 yumuşak zemin (EPDM) yürüyüş yolları, bisiklet yolları, her yaşa hitap eden temalı oyun parkları, açık alan fıtness ve barfiks takımları, spor sahaları, kay kay pisti, park içi WC’ler, restoranlar, cafeler, sosyal ve sportif tesisleriyle ve rengarenk peyzajıyla Başakşehir’de doğanın taze soluklarının hissedilebildiği İstanbul’un en modern açık hava sosyal alanlarından biridir. Sular vadisi sadece ilçede ikamet eden vatandaşlara değil aynı zamanda komşu ilçelerde yaşayan vatandaşlara da hizmet vermektedir. Sular Vadisi’nde; Başakşehir Belediyesine ait nikah salonu-sosyal tesis, 5 adet camii, 12.000 m2 dere ve süs havuzları, 1 adet market, 6 adet cafe, 3 adet restoran, 1.200 kişi kapasiteli 1.500 m2 alan üzerine kurulu amfi tiyatro ve 257 araçlık otopark alanı bulunmaktadır. ",
+                 imageNames: ["sular-vadisi"],
+                 link: "adres",
+                 category: "yesil-alan")
         
     
         
