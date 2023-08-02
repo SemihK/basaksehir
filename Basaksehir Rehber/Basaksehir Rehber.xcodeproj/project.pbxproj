@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		600AEE6A2A7A94FE00242FD5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		600AEE6C2A7A982D00242FD5 /* Basaksehir-Rehber-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Basaksehir-Rehber-Info.plist"; sourceTree = SOURCE_ROOT; };
 		603D522E2A73C1A50032D640 /* Basaksehir Rehber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basaksehir Rehber.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		603D52312A73C1A50032D640 /* Basaksehir_RehberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basaksehir_RehberApp.swift; sourceTree = "<group>"; };
 		603D52332A73C1A50032D640 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		603D52302A73C1A50032D640 /* Basaksehir Rehber */ = {
 			isa = PBXGroup;
 			children = (
+				600AEE6C2A7A982D00242FD5 /* Basaksehir-Rehber-Info.plist */,
 				603D52432A73D6FA0032D640 /* DataServices */,
 				603D52422A73D6ED0032D640 /* Views */,
 				603D52412A73D6E50032D640 /* ViewModels */,
@@ -337,6 +339,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Basaksehir-Rehber-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Basaksehir Rehber";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -379,6 +382,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Basaksehir-Rehber-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Basaksehir Rehber";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
