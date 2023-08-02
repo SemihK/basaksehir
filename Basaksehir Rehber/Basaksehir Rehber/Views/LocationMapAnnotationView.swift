@@ -67,6 +67,17 @@ struct LocationMapAnnotationView: View {
                     .background(accentColor) // Varsayılan arkaplan rengi (accentColor)
                     .clipShape(Circle())
             }
+            else if category == "hastane" {
+                Image(systemName: "stethoscope.circle.fill") // Diğer kategorilere özel varsayılan ikon
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30, height: 30)
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding(6)
+                    .background(accentColor) // Varsayılan arkaplan rengi (accentColor)
+                    .clipShape(Circle())
+            }
         }
     }
     

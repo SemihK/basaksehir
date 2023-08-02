@@ -74,6 +74,22 @@ class LocationsDataService {
                  link: "adres",
                  category: "pazar"),
         
+        Location(name: "Başakşehir Çam ve Sakura Şehir Hastanesi",
+                 status: "Acil Servis",
+                 coordinates: CLLocationCoordinate2D(latitude: 41.102868147521015, longitude: 28.77734652041644),
+                 description: "ŞEHİR HASTANESİ",
+                 imageNames: ["Sehir-Hastanesi"],
+                 link: "adres",
+                 category: "hastane"),
+        
+        Location(name: "Başakşehir Devlet Hastanesi",
+                 status: "Acil Servis",
+                 coordinates: CLLocationCoordinate2D(latitude: 41.11852101842767, longitude: 28.809207115050725),
+                 description: "2007 yılında hizmet vermeye başlayan Başakşehir Devlet Hastanesi 100 hasta yataklı olup, yoğun bakımı, ameliyathanesi ve doğumhanesi ile tam teşekküllü bir hastane olarak kaliteli sağlık hizmetini Başakşehirlilere sunmaktadır.",
+                 imageNames: ["Devlet-Hastanesi"],
+                 link: "adres",
+                 category: "hastane"),
+        
     
         
        
