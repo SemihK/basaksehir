@@ -9,18 +9,24 @@ import SwiftUI
 
 struct SplashScreen: View {
     var body: some View {
-        VStack {
-            Image("SplashScreen") // logo
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100)
-                .padding()
-            
-            Text("Basaksehir Kent Rehberi")
-                .font(.largeTitle)
-                .bold()
+        ZStack {
+            Color.orange.ignoresSafeArea()
+            VStack {
+                Image("SplashScreen") // logo
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100, height: 100)
+                    .padding()
                 
-            Text("This screen under a development processs")
+                Text("Basaksehir Kent Rehberi")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(.white)
+                    
+                Text("This screen under a development processs")
+                    .foregroundColor(.white)
+                    .font(.footnote)
+            }
         }
     }
 }
