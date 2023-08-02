@@ -79,10 +79,7 @@ extension LocationDetailView {
                 .font(.title3)
                 .foregroundColor(.secondary)
             
-            Text(location.activity)
-                .font(.title3)
-                .foregroundColor(.secondary)
-            
+
 
             
             if let url = URL(string: location.link) {
@@ -100,7 +97,7 @@ extension LocationDetailView {
             span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))),
             annotationItems: [location]) { location in
             MapAnnotation(coordinate: location.coordinates) {
-                LocationMapAnnotationView()
+                LocationMapAnnotationView(category: location.category) // Kategori bilgisini geçirin
                     .shadow(radius: 10)
             }
         }

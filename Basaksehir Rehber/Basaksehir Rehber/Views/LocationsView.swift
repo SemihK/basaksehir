@@ -17,7 +17,6 @@ struct LocationsView: View {
         ZStack {
             mapLayer
                 .ignoresSafeArea()
-            
             VStack(spacing: 0) {
                 header
                     .padding()
@@ -71,18 +70,16 @@ extension LocationsView {
     }
     
     private var mapLayer: some View {
-        Map(coordinateRegion: $vm.mapRegion,
-            annotationItems: vm.locations,
-            annotationContent: { location in
+        Map(coordinateRegion: $vm.mapRegion, annotationItems: vm.locations) { location in
             MapAnnotation(coordinate: location.coordinates) {
-                LocationMapAnnotationView()
+                LocationMapAnnotationView(category: location.category) // Kategori bilgisini geçirin
                     .scaleEffect(vm.mapLocation == location ? 1 : 0.7)
                     .shadow(radius: 10)
                     .onTapGesture {
                         vm.showNextLocation(location: location)
                     }
             }
-        })
+        }
     }
     
     private var locationsPreviewStack: some View {

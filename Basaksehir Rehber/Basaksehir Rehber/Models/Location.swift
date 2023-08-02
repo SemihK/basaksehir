@@ -15,9 +15,9 @@ struct Location: Identifiable, Equatable {
     let coordinates: CLLocationCoordinate2D
     let description: String
     let imageNames: [String]
-    let faaliyet: String
     let link: String
-    let activity: String
+    let category: String
+    
     
     
     // Identifiable section
