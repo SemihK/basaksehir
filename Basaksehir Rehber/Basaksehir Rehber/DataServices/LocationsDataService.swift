@@ -14,6 +14,14 @@ class LocationsDataService {
     static let locations: [Location] = [
         
             //  default Istanbul coordinate: 41.014217508317614, 28.97550922394332
+        
+        Location(name: "Sular Vadisi",
+                 status: "24 saat hizmet vermektedir.",
+                 coordinates: CLLocationCoordinate2D(latitude: 41.1194282126113, longitude: 28.80736828395418),
+                 description: "Başak mahallesi 4 ve 5. Etap’larda yer alan Sular Vadisi; 550.000 m2’lik alanda kurulmuştur. Sular vadisi içerisinde; 20.000 m2 yumuşak zemin (EPDM) yürüyüş yolları, bisiklet yolları, her yaşa hitap eden temalı oyun parkları, açık alan fıtness ve barfiks takımları, spor sahaları, kay kay pisti, park içi WC’ler, restoranlar, cafeler, sosyal ve sportif tesisleriyle ve rengarenk peyzajıyla Başakşehir’de doğanın taze soluklarının hissedilebildiği İstanbul’un en modern açık hava sosyal alanlarından biridir. Sular vadisi sadece ilçede ikamet eden vatandaşlara değil aynı zamanda komşu ilçelerde yaşayan vatandaşlara da hizmet vermektedir. Sular Vadisi’nde; Başakşehir Belediyesine ait nikah salonu-sosyal tesis, 5 adet camii, 12.000 m2 dere ve süs havuzları, 1 adet market, 6 adet cafe, 3 adet restoran, 1.200 kişi kapasiteli 1.500 m2 alan üzerine kurulu amfi tiyatro ve 257 araçlık otopark alanı bulunmaktadır. ",
+                 imageNames: ["sular-vadisi"],
+                 link: "adres",
+                 category: "yesil-alan"),
             
         Location(
                          name: "Akif İnan Bilgi Evi",
@@ -50,13 +58,7 @@ class LocationsDataService {
                   link: "adres",
                   category: "yesil-alan"),
         
-        Location(name: "Sular Vadisi",
-                 status: "24 saat hizmet vermektedir.",
-                 coordinates: CLLocationCoordinate2D(latitude: 41.1194282126113, longitude: 28.80736828395418),
-                 description: "Başak mahallesi 4 ve 5. Etap’larda yer alan Sular Vadisi; 550.000 m2’lik alanda kurulmuştur. Sular vadisi içerisinde; 20.000 m2 yumuşak zemin (EPDM) yürüyüş yolları, bisiklet yolları, her yaşa hitap eden temalı oyun parkları, açık alan fıtness ve barfiks takımları, spor sahaları, kay kay pisti, park içi WC’ler, restoranlar, cafeler, sosyal ve sportif tesisleriyle ve rengarenk peyzajıyla Başakşehir’de doğanın taze soluklarının hissedilebildiği İstanbul’un en modern açık hava sosyal alanlarından biridir. Sular vadisi sadece ilçede ikamet eden vatandaşlara değil aynı zamanda komşu ilçelerde yaşayan vatandaşlara da hizmet vermektedir. Sular Vadisi’nde; Başakşehir Belediyesine ait nikah salonu-sosyal tesis, 5 adet camii, 12.000 m2 dere ve süs havuzları, 1 adet market, 6 adet cafe, 3 adet restoran, 1.200 kişi kapasiteli 1.500 m2 alan üzerine kurulu amfi tiyatro ve 257 araçlık otopark alanı bulunmaktadır. ",
-                 imageNames: ["sular-vadisi"],
-                 link: "adres",
-                 category: "yesil-alan"),
+        
         
         Location(name: "Başakpazar Fuar ve Sergi Alanı",
                  status: "Perşembe ve Pazar günleri hizmet vermektedir.",
