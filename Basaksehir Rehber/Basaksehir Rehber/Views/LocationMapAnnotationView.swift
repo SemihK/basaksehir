@@ -9,84 +9,51 @@ import SwiftUI
 
 struct LocationMapAnnotationView: View {
     
-    let accentColor = Color("AccentColor")
     let category: String
     
     var body: some View {
         VStack(spacing: 0) {
             if category == "polis" {
-                Image(systemName: "shield.checkered") // Kategoriye özel polis ikonu
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(.blue) 
-                    .clipShape(Circle())
+                customAnnotation(imageName: "shield.checkered", backgroundColor: .blue)
             } else if category == "bilgi-evi" {
-                Image(systemName: "house.circle.fill") // Bilgi Evi Kategoriye özel kütüphane ikonu
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(accentColor) // Kütüphane kategorisi için mavi arkaplan
-                    .clipShape(Circle())
+                customAnnotation(imageName: "house.circle.fill", backgroundColor: Color("AccentColor"))
             } else if category == "yesil-alan" {
-                Image(systemName: "sportscourt.fill") // Yesil Alan kategorisi için özel ikon
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(.green)
-                    .clipShape(Circle())
-            }
-            else if category == "kutuphane" {
-                Image(systemName: "book.circle.fill") // Kütüphane kategorisi için özel ikon
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(accentColor)
-                    .clipShape(Circle())
-            }
-            else if category == "pazar" {
-                Image(systemName: "basket.fill") // Pazar kategorisi için özel ikon
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(accentColor)
-                    .clipShape(Circle())
-            }
-            else if category == "hastane" {
-                Image(systemName: "stethoscope.circle.fill") // Hastane kategorisi için özel ikon
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30, height: 30)
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(6)
-                    .background(accentColor)
-                    .clipShape(Circle())
+                customAnnotation(imageName: "sportscourt.fill", backgroundColor: .green)
+            } else if category == "kutuphane" {
+                customAnnotation(imageName: "book.circle.fill", backgroundColor: Color("AccentColor"))
+            } else if category == "pazar" {
+                customAnnotation(imageName: "basket.fill", backgroundColor: Color("AccentColor"))
+            } else if category == "hastane" {
+                customAnnotation(imageName: "stethoscope.circle.fill", backgroundColor: Color("AccentColor"))
+            } else {
+                customAnnotation(imageName: "circle.fill", backgroundColor: .gray)
             }
         }
     }
     
-    struct LocationMapAnnotationView_Previews: PreviewProvider {
-        static var previews: some View {
-            ZStack {
-                Color.black.ignoresSafeArea()
-                
-            }
+    func customAnnotation(imageName: String, backgroundColor: Color) -> some View {
+        Image(systemName: imageName)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 30, height: 30)
+            .font(.headline)
+            .foregroundColor(.white)
+            .padding(6)
+            .background(backgroundColor)
+            .clipShape(Circle())
+    }
+}
+
+struct LocationMapAnnotationView_Previews: PreviewProvider {
+    static var previews: some View {
+        ZStack {
+            Color.black.ignoresSafeArea()
+            
+            // Örnek
+            LocationMapAnnotationView(category: "kutuphane")
         }
     }
 }
+
+    
+   
