@@ -14,7 +14,7 @@ struct LocationMapAnnotationView: View {
     var body: some View {
         VStack(spacing: 0) {
             if category == "polis" {
-                customAnnotation(imageName: "shield.checkered", backgroundColor: .blue)
+                customAnnotation(imageName: "shield.checkered", backgroundColor: .gray)
             } else if category == "bilgi-evi" {
                 customAnnotation(imageName: "house.circle.fill", backgroundColor: Color("AccentColor"))
             } else if category == "yesil-alan" {
@@ -28,6 +28,9 @@ struct LocationMapAnnotationView: View {
             }
             else if category == "spor-park" {
                 customAnnotation(imageName: "sportscourt.fill", backgroundColor:.green)
+            }
+            else if category == "belediye" {
+                customAnnotation(imageName: "building.2.crop.circle", backgroundColor:.gray)
             }
             else {
                 customAnnotation(imageName: "circle.fill", backgroundColor: .gray)

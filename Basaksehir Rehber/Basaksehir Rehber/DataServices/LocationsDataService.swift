@@ -42,7 +42,7 @@ class LocationsDataService {
                          category:"bilgi-evi"),
         
         Location(
-                         name: "Metrokent Polis Karakolu",
+                         name: "Basaksehir Polis Karakolu",
                          status: "24 saat hizmet vermektedir. ",
                          coordinates: CLLocationCoordinate2D(latitude:41.10449102980907,longitude:  28.80172069503571 ),
                          description: "Başakşehir Polis Karakolu",
@@ -134,11 +134,11 @@ class LocationsDataService {
         
         Location(name: "Başakşehir Belediyesi",
                  status: "X",
-                 coordinates: CLLocationCoordinate2D(latitude: 41.08348434106527,  longitude:  28.729796093174997),
-                 description: "Şahintepe Spor Parkımızda, 1 adet masa tenisi, 1 adet açık halı saha, 1 adet kapalı halı saha, pilates zumba, step- aerobik dersleri için stüdyo bulunmaktadır.",
-                 imageNames: ["sahintepe-spor"],
-                 link: "http://www.sporparklari.com/onlinekayit.html",
-                 category: "spor-park"),
+                 coordinates: CLLocationCoordinate2D(latitude: 41.12112746440203,   longitude:  28.77125611023117),
+                 description: "Belediye binası",
+                 imageNames: ["no-image"],
+                 link: "https://www.google.com/maps/dir//41.1206188,28.7702152/@41.12074,28.7702286,19z/data=!4m2!4m1!3e2",
+                 category: "belediye"),
         
         
     
