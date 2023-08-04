@@ -136,7 +136,7 @@ class LocationsDataService {
                  status: "X",
                  coordinates: CLLocationCoordinate2D(latitude: 41.12112746440203,   longitude:  28.77125611023117),
                  description: "Belediye binası",
-                 imageNames: ["no-image"],
+                 imageNames: ["Basaksehir-Belediye"],
                  link: "https://www.google.com/maps/dir//41.1206188,28.7702152/@41.12074,28.7702286,19z/data=!4m2!4m1!3e2",
                  category: "belediye"),
         
