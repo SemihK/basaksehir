@@ -18,14 +18,18 @@ struct LocationMapAnnotationView: View {
             } else if category == "bilgi-evi" {
                 customAnnotation(imageName: "house.circle.fill", backgroundColor: Color("AccentColor"))
             } else if category == "yesil-alan" {
-                customAnnotation(imageName: "sportscourt.fill", backgroundColor: .green)
+                customAnnotation(imageName: "tree.circle.fill", backgroundColor: .green)
             } else if category == "kutuphane" {
                 customAnnotation(imageName: "book.circle.fill", backgroundColor: Color("AccentColor"))
             } else if category == "pazar" {
                 customAnnotation(imageName: "basket.fill", backgroundColor: Color("AccentColor"))
             } else if category == "hastane" {
                 customAnnotation(imageName: "stethoscope.circle.fill", backgroundColor: Color("AccentColor"))
-            } else {
+            }
+            else if category == "spor-park" {
+                customAnnotation(imageName: "sportscourt.fill", backgroundColor:.green)
+            }
+            else {
                 customAnnotation(imageName: "circle.fill", backgroundColor: .gray)
             }
         }
