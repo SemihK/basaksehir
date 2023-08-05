@@ -68,6 +68,7 @@ extension LocationsView {
         }
     }
     
+    
     private var locationsPreviewStack: some View {
         ZStack {
             ForEach(vm.locations) { location in
@@ -106,3 +107,5 @@ extension LocationsView {
          }
  }
  */
+
+// // basaksehir blue
